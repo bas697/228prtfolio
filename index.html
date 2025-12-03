@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
-
     <style>
       body {
         margin: 0;
@@ -57,7 +56,6 @@
         font-size: 22px;
         font-weight: 600;
         transition: 0.8s;
-
       }
 
       .navbar a:hover {
@@ -118,7 +116,6 @@
         position: relative;
       }
 
-
       .panel-videos {
         width: 100%;
         height: 708px;
@@ -134,31 +131,25 @@
         width: 100%;
         height: 100%;
         position: relative;
-
       }
 
       .video-wrapper {
         position: absolute;
         top: 50%;
-        left: -215px;
-
+        left: -213px;
         transition: transform 0.6s ease, z-index 0.6s ease, filter 0.3s ease;
       }
-
 
       .video-wrapper img {
         width: 832px;
         border-radius: 6px;
-
         cursor: pointer;
         transition: filter 0.3s ease;
       }
 
-
       .video-wrapper.side img {
         filter: brightness(0.7) blur(1px);
       }
-
 
       .video-wrapper.center img {
         filter: brightness(1) blur(0px);
@@ -174,7 +165,6 @@
         font-weight: 600;
         text-shadow: 2px 2px 0 #A9320F, -2px 2px 0 #A9320F,
           2px -2px 0 #A9320F, -2px -2px 0 #A9320F, 0px 2px 0 #A9320F, 2px 0px 0 #A9320F, -2px 0px 0 #A9320F, 0px -2px 0 #A9320F;
-
       }
 
       .videos-label {
@@ -188,9 +178,7 @@
         z-index: 5;
         text-shadow: 2px 2px 0 #A7310B, -2px 2px 0 #A7310B,
           2px -2px 0 #A7310B, -2px -2px 0 #A7310B, 0px 2px 0 #A7310B, 2px 0px 0 #A7310B, -2px 0px 0 #A7310B, 0px -2px 0 #A7310B;
-
       }
-
 
       .play-button {
         position: absolute;
@@ -206,7 +194,6 @@
         border: none;
       }
 
-
       .video-wrapper.center .play-button {
         opacity: 1;
       }
@@ -217,7 +204,7 @@
         color: #FDFFD9;
         margin-bottom: 20px;
         text-align: left;
-        margin-right: 550px
+        margin-right: 120px
       }
 
       .about-text {
@@ -226,12 +213,11 @@
         color: #FDFFD9;
         max-width: 800px;
         text-align: left;
-        margin-right: 580px;
+        margin-right: 115px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.4;
       }
-
 
       .panel-about {
         width: 100%;
@@ -264,41 +250,46 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 300px;
-
+        max-width: 382px;
+        max-height: 546px;
         background-color: #FFBB00;
-
         padding: 10px;
-
         border-radius: 8px;
+        margin-top: 120px;
+        border: 3px solid black;
       }
 
       .about-image {
-        max-height: 500px;
+        max-height: 550px;
         width: auto;
         display: block;
       }
 
       .caption-box {
-        background-color: #FFBB00;
-
-        padding: 6px 12px;
-        margin-top: 10px;
-
+        background-color: #EE4410;
+        padding: 12px 12px;
+        margin-top: 0px;
         border-radius: 4px;
         text-align: center;
-        width: 100%;
-
+        width: 99%;
+        border: 3px solid black;
       }
 
       .caption-text {
         margin: 0;
-        font-size: 16px;
-        font-family: 'Comic Neue', sans-serif;
-        color: #000;
+        font-size: 36px;
+        font-family: 'Anton SC', sans-serif;
+        color: #FBFCD4;
       }
 
+      .subtitle {
+        font-size: 30px;
+        font-weight: 550;
+        letter-spacing: 1px;
+        font-family: 'Comic Neue', sans-serif;
+      }
 
+      /* UPDATED WEB & APP SECTION */
       .panel-webapp {
         width: 100%;
         height: 1295px;
@@ -307,6 +298,62 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+      }
+
+      .webapp-heading {
+        font-family: 'Fredoka One', sans-serif;
+        font-size: 80px;
+        color: #FDFFD9;
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+      .webapp-projects {
+        display: flex;
+        gap: 40px;
+        flex-wrap: nowrap;
+      }
+
+      .webapp-box {
+        background-color: #FFBB00;
+        padding: 12px;
+        border-radius: 8px;
+        border: 3px solid black;
+        width: 561px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .webapp-image {
+        width: 561px;
+        height: 800px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .webapp-caption {
+        background-color: #EE4410;
+        padding: 12px 12px;
+        margin-top: 10px;
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+        border: 3px solid black;
+      }
+
+      .webapp-caption .caption-text {
+        margin: 0;
+        font-size: 32px;
+        font-family: 'Anton SC', sans-serif;
+        color: #FBFCD4;
+      }
+
+      .webapp-caption .subtitle {
+        font-size: 26px;
+        font-family: 'Comic Neue', sans-serif;
+        font-weight: 600;
+        margin-top: 4px;
       }
 
       .panel-designs {
@@ -340,6 +387,7 @@
       }
     </style>
   </head>
+
   <body>
 
     <div class="frame">
@@ -383,7 +431,6 @@
             <div class="video-label">SACRIFICE</div>
           </div>
 
-
         </div>
       </section>
 
@@ -398,33 +445,62 @@
           <div class="about-image-wrapper">
             <img src="aboutimage.png" alt="Brendan working" class="about-image">
             <div class="caption-box">
-              <p class="caption-text">Bringing ideas to life.</p>
+              <p class="caption-text">BRENDAN STEVENS</p>
+              <p class="caption-text subtitle">VIDEO EDITOR</p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- UPDATED WEB & APP SECTION -->
       <section class="panel-webapp" id="webapp">
-        <div class="container"></div>
+        <div class="container">
+
+          <h2 class="webapp-heading">WEB & APP</h2>
+
+          <div class="webapp-projects">
+
+            <div class="webapp-box">
+              <img src="webapp1.png" class="webapp-image" alt="Web Project 1">
+              <div class="webapp-caption">
+                <p class="caption-text">PROJECT TITLE</p>
+                <p class="subtitle">WEB APPLICATION</p>
+              </div>
+            </div>
+
+            <div class="webapp-box">
+              <img src="webapp2.png" class="webapp-image" alt="Web Project 2">
+              <div class="webapp-caption">
+                <p class="caption-text">PROJECT TITLE</p>
+                <p class="subtitle">APP DESIGN</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </section>
+
       <section class="panel-designs" id="designs">
         <div class="container"></div>
       </section>
+
       <section class="panel-skills" id="skills">
         <div class="container"></div>
       </section>
+
       <section class="panel-contact" id="contact">
         <div class="container"></div>
       </section>
 
     </div>
 
-    <!-- used chat for this -->
     <script>
       const wrappers = document.querySelectorAll('.video-wrapper');
       let currentCenter = 0;
 
-      function updatePositions () {
-        const radius = 400;
+      function updatePositions() {
+        const radius = 403;
 
         wrappers.forEach((w, i) => {
           let angle = ((i - currentCenter) / wrappers.length) * 2 * Math.PI;
@@ -435,7 +511,6 @@
 
           w.style.transform = `translateX(${left}%) translateY(-50%) scale(${scale})`;
           w.style.zIndex = Math.round(scale * 100);
-
 
           if (i === currentCenter) {
             w.classList.add("center");
