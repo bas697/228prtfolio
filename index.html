@@ -308,7 +308,6 @@
         z-index: 5;
         text-shadow: 2px 2px 0 #A7310B, -2px 2px 0 #A7310B,
         2px -2px 0 #A7310B, -2px -2px 0 #A7310B, 0px 2px 0 #A7310B, 2px 0px 0 #A7310B, -2px 0px 0 #A7310B, 0px -2px 0 #A7310B;
-        
       }
 
       .webapp-projects {
@@ -319,13 +318,14 @@
 
       .webapp-box {
         background-color: #FFBB00;
-        padding: 12px;
+        padding: 0px;
         border-radius: 8px;
         border: 3px solid black;
         width: 561px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -30px;
       }
 
       .webapp-image {
@@ -338,23 +338,24 @@
       .webapp-caption {
         background-color: #EE4410;
         padding: 12px 12px;
-        margin-top: 10px;
+        margin-top: 0px;
         border-radius: 4px;
-        width: 100%;
+        width: 95.5%;
         text-align: center;
         border: 3px solid black;
       }
 
       .webapp-caption .caption-text {
         margin: 0;
-        font-size: 32px;
+        font-size: 48px;
         font-family: 'Anton SC', sans-serif;
         color: #FBFCD4;
       }
 
       .webapp-caption .subtitle {
-        font-size: 26px;
-        font-family: 'Comic Neue', sans-serif;
+        font-size: 32px;
+        color: #FBFCD4;
+        font-family: 'Fredoka One', sans-serif;
         font-weight: 600;
         margin-top: 4px;
       }
@@ -367,6 +368,47 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
+      }
+
+      .design-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .design-box {
+        width: 562px;
+        height: 743px;
+        background-color: #FFBB00;
+        border-radius: 8px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .design-image {
+        width: 562px;
+        height: 650px;
+        object-fit: cover;
+      }
+
+      .design-caption {
+        background-color: #EE4410;
+        padding: 12px;
+        border-radius: 4px;
+        width: 95%;
+        text-align: center;
+        border: 3px solid black;
+      }
+
+      .design-caption .caption-text {
+        margin: 0;
+        font-size: 48px;
+        font-family: 'Anton SC', sans-serif;
+        color: #FBFCD4;
       }
 
       .panel-skills {
@@ -392,7 +434,6 @@
   </head>
 
   <body>
-
     <div class="frame">
 
       <section class="panel-home" id="home">
@@ -410,30 +451,27 @@
         </div>
       </section>
 
-      <!-- VIDEO CAROUSEL -->
       <section class="panel-videos" id="videos">
         <div class="videos-label">VIDEOS</div>
 
         <div class="container video-container">
-
           <div class="video-wrapper">
             <img src="video1NEW.png" alt="Video 1">
-            <img class="play-button" src="play-button.svg" alt="Play" data-url="video1.html">
+            <img class="play-button" src="play-button.svg" alt="playbutton" data-url="video1.html">
             <div class="video-label">UNDEAD AGAIN</div>
           </div>
 
           <div class="video-wrapper">
             <img src="video2NEW.png" alt="Video 2">
-            <img class="play-button" src="play-button.svg" alt="Play" data-url="video2.html">
+            <img class="play-button" src="play-button.svg" alt="playbutton" data-url="video2.html">
             <div class="video-label">WATERLOO PARK</div>
           </div>
 
           <div class="video-wrapper">
             <img src="video3NEW.png" alt="Video 3">
-            <img class="play-button" src="play-button.svg" alt="Play" data-url="video3.html">
+            <img class="play-button" src="play-button.svg" alt="playbutton" data-url="video3.html">
             <div class="video-label">SACRIFICE</div>
           </div>
-
         </div>
       </section>
 
@@ -446,7 +484,7 @@
             </p>
           </div>
           <div class="about-image-wrapper">
-            <img src="aboutimage.png" alt="Brendan working" class="about-image">
+            <img src="aboutimage.png" class="about-image">
             <div class="caption-box">
               <p class="caption-text">BRENDAN STEVENS</p>
               <p class="caption-text subtitle">VIDEO EDITOR</p>
@@ -455,37 +493,68 @@
         </div>
       </section>
 
-      <!-- UPDATED WEB & APP SECTION -->
       <section class="panel-webapp" id="webapp">
         <div class="container">
-
-          <h2 class="webapp-heading">WEB & APP</h2>
+          <h2 class="webapp-heading">WEB &amp APP</h2>
 
           <div class="webapp-projects">
-
             <div class="webapp-box">
-              <img src="web1.png" class="webapp-image" alt="Web Project 1">
+              <img src="web1.png" class="webapp-image">
               <div class="webapp-caption">
-                <p class="caption-text">PROJECT TITLE</p>
-                <p class="subtitle">WEB APPLICATION</p>
+                <p class="caption-text">WEBSITE REDESIGN</p>
+                <p class="subtitle">GBDA 201, 1 Week Span</p>
               </div>
             </div>
 
             <div class="webapp-box">
-              <img src="web2.png" class="webapp-image" alt="Web Project 2">
+              <img src="web2.png" class="webapp-image">
               <div class="webapp-caption">
-                <p class="caption-text">PROJECT TITLE</p>
-                <p class="subtitle">APP DESIGN</p>
+                <p class="caption-text">RECIPE APP DESIGN</p>
+                <p class="subtitle">GBDA 210, In-Class Assignment</p>
               </div>
             </div>
-
           </div>
 
         </div>
       </section>
 
       <section class="panel-designs" id="designs">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="webapp-heading">DESIGNS</h2>
+
+          <div class="design-grid">
+
+            <div class="design-box">
+              <img src="design1.png" class="design-image">
+              <div class="design-caption">
+                <p class="caption-text">POSTER DESIGN</p>
+              </div>
+            </div>
+
+            <div class="design-box">
+              <img src="design2.png" class="design-image">
+              <div class="design-caption">
+                <p class="caption-text">LOGO REVAMP</p>
+              </div>
+            </div>
+
+            <div class="design-box">
+              <img src="design3.png" class="design-image">
+              <div class="design-caption">
+                <p class="caption-text">INFOGRAPHIC</p>
+              </div>
+            </div>
+
+            <div class="design-box">
+              <img src="design4.png" class="design-image">
+              <div class="design-caption">
+                <p class="caption-text">MAGAZINE LAYOUT</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </section>
 
       <section class="panel-skills" id="skills">
