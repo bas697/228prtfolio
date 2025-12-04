@@ -312,7 +312,7 @@
 
       .webapp-projects {
         display: flex;
-        gap: 40px;
+        justify-content: space-between;
         flex-wrap: nowrap;
       }
 
@@ -321,7 +321,7 @@
         padding: 0px;
         border-radius: 8px;
         border: 3px solid black;
-        width: 561px;
+        width: 585px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -329,7 +329,7 @@
       }
 
       .webapp-image {
-        width: 561px;
+        width: 585px;
         height: 800px;
         object-fit: cover;
         border-radius: 4px;
@@ -340,7 +340,7 @@
         padding: 12px 12px;
         margin-top: 0px;
         border-radius: 4px;
-        width: 95.5%;
+        width: 96%;
         text-align: center;
         border: 3px solid black;
       }
@@ -350,6 +350,8 @@
         font-size: 48px;
         font-family: 'Anton SC', sans-serif;
         color: #FBFCD4;
+        text-shadow: 1.5px  1.5px 0 #A7310B, -1.5px  1.5px 0 #A7310B,
+        1.5px -1.5px 0 #A7310B, -1.5px -1.5px 0 #A7310B, 0px  1.5px 0 #A7310B,  1.5px 0px 0 #A7310B, -1.5px 0px 0 #A7310B, 0px -1.5px 0 #A7310B;
       }
 
       .webapp-caption .subtitle {
@@ -358,6 +360,8 @@
         font-family: 'Fredoka One', sans-serif;
         font-weight: 600;
         margin-top: 4px;
+        text-shadow: 1px 1px 0 #A7310B, -1px 1px 0 #A7310B,
+        1px -1px 0 #A7310B, -1px -1px 0 #A7310B, 0px 1px 0 #A7310B, 1px 0px 0 #A7310B, -1px 0px 0 #A7310B, 0px -1px 0 #A7310B;
       }
 
       .panel-designs {
@@ -372,13 +376,15 @@
 
       .design-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        margin-top: 40px;
+        grid-template-columns: repeat(2, 585px);
+        justify-content: space-between;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-top: -30px;
       }
 
       .design-box {
-        width: 562px;
+        width: 585px;
         height: 743px;
         background-color: #FFBB00;
         border-radius: 8px;
@@ -387,20 +393,21 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        margin-top: -30px;
+        margin-top: 0;
       }
 
+
       .design-image {
-        width: 562px;
+        width: 585px;
         height: 650px;
         object-fit: cover;
       }
 
       .design-caption {
-        background-color: #EE4410;
+        background-color: #FB0;
         padding: 12px;
         border-radius: 4px;
-        width: 95%;
+        width: 96%;
         text-align: center;
         border: 3px solid black;
       }
@@ -410,6 +417,8 @@
         font-size: 48px;
         font-family: 'Anton SC', sans-serif;
         color: #FBFCD4;
+        text-shadow: 1.5px  1.5px 0 #A7310B, -1.5px  1.5px 0 #A7310B,
+        1.5px -1.5px 0 #A7310B, -1.5px -1.5px 0 #A7310B, 0px  1.5px 0 #A7310B,  1.5px 0px 0 #A7310B, -1.5px 0px 0 #A7310B, 0px -1.5px 0 #A7310B;
       }
 
       .panel-skills {
@@ -528,28 +537,28 @@
             <div class="design-box">
               <img src="design1.png" alt="design1" class="design-image">
               <div class="design-caption">
-                <p class="caption-text">POSTER DESIGN</p>
+                <p class="caption-text">MAGAZINE DESIGN</p>
               </div>
             </div>
 
             <div class="design-box">
               <img src="design2.png" alt="design2" class="design-image">
               <div class="design-caption">
-                <p class="caption-text">LOGO REVAMP</p>
+                <p class="caption-text">POSTER DESIGN</p>
               </div>
             </div>
 
             <div class="design-box">
               <img src="design3.png" alt="design3" class="design-image">
               <div class="design-caption">
-                <p class="caption-text">INFOGRAPHIC</p>
+                <p class="caption-text">LOGO DESIGN</p>
               </div>
             </div>
 
             <div class="design-box">
               <img src="design4.png" alt="design4" class="design-image">
               <div class="design-caption">
-                <p class="caption-text">MAGAZINE LAYOUT</p>
+                <p class="caption-text">AUDITION MIX</p>
               </div>
             </div>
 
