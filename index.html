@@ -84,7 +84,7 @@
         height: auto;
         z-index: 4;  
         border: 3px black solid;
-         border-radius: 6-px;
+        border-radius: 6px;
   }
 
 
@@ -390,7 +390,6 @@
       .design-box {
         width: 585px;
         height: 743px;
-        background-color: #FFBB00;
         border-radius: 8px;
         border: 3px solid black;
         display: flex;
@@ -401,20 +400,24 @@
       }
 
 
-      .design-image {
-        width: 585px;
-        height: 650px;
+    .design-image {
+        width: 105%;
+        height: 655px;         
         object-fit: cover;
+        object-position: top;
+        margin-top: -7px;    
       }
 
+
       .design-caption {
-        background-color: #FB0;
+        background-color: #FB0; 
         padding: 12px;
         border-radius: 4px;
-        width: 96%;
+        width: 100%; 
         text-align: center;
         border: 3px solid black;
-      }
+}
+
 
       .design-caption .caption-text {
         margin: 0;
@@ -457,6 +460,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 30px;
       }
       
       .video-wrapper.side img {
